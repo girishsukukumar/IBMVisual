@@ -1,0 +1,40 @@
+TypeError: 'float' does not have the buffer interface
+
+Traceback (most recent call last)
+File "C:\Python27\lib\site-packages\flask\app.py", line 2309, in __call__
+return self.wsgi_app(environ, start_response)
+File "C:\Python27\lib\site-packages\flask\app.py", line 2295, in wsgi_app
+response = self.handle_exception(e)
+File "C:\Python27\lib\site-packages\flask\app.py", line 1741, in handle_exception
+reraise(exc_type, exc_value, tb)
+File "C:\Python27\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+response = self.full_dispatch_request()
+File "C:\Python27\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+rv = self.handle_user_exception(e)
+File "C:\Python27\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+reraise(exc_type, exc_value, tb)
+File "C:\Python27\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+rv = self.dispatch_request()
+File "C:\Python27\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+return self.view_functions[rule.endpoint](**req.view_args)
+File "C:\Users\Girish S Kumar\Documents\watson\VisualMedical1008\hello.py", line 54, in upload_file
+classes = visual_recognition.classify(images_file=fileName, threshold=thresh)
+File "C:\Python27\lib\site-packages\watson_developer_cloud\visual_recognition_v3.py", line 169, in classify
+accept_json=True)
+File "C:\Python27\lib\site-packages\watson_developer_cloud\watson_service.py", line 441, in request
+**kwargs)
+File "C:\Python27\lib\site-packages\requests\api.py", line 58, in request
+return session.request(method=method, url=url, **kwargs)
+File "C:\Python27\lib\site-packages\requests\sessions.py", line 498, in request
+prep = self.prepare_request(req)
+File "C:\Python27\lib\site-packages\requests\sessions.py", line 441, in prepare_request
+hooks=merge_hooks(request.hooks, self.hooks),
+File "C:\Python27\lib\site-packages\requests\models.py", line 312, in prepare
+self.prepare_body(data, files, json)
+File "C:\Python27\lib\site-packages\requests\models.py", line 500, in prepare_body
+(body, content_type) = self._encode_files(files, data)
+File "C:\Python27\lib\site-packages\requests\models.py", line 169, in _encode_files
+body, content_type = encode_multipart_formdata(new_fields)
+File "C:\Python27\lib\site-packages\urllib3\filepost.py", line 90, in encode_multipart_formdata
+body.write(data)
+TypeError: 'float' does not have the buffer interface
