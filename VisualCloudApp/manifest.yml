@@ -1,0 +1,5 @@
+---
+applications:
+ - name: VisualMedical1008
+   random-route: true
+   memory: 128M
